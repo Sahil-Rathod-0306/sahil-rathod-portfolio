@@ -1,36 +1,146 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Sahil Rathod – Developer Portfolio
 
-## Getting Started
+Welcome to my personal portfolio website 👋
+This project showcases my skills, projects, and experience as a **Full Stack Developer**.
 
-First, run the development server:
+---
+
+## 🌐 Live Demo
+
+👉 https://your-portfolio.vercel.app
+*(Update after deployment)*
+
+---
+
+## 🧑‍💻 About Me
+
+I am a **Full Stack Developer** skilled in building scalable web and mobile applications using modern technologies like **Next.js, Django, and React Native**.
+
+I focus on:
+
+* Clean and responsive UI
+* Efficient backend systems
+* Real-world problem solving
+
+---
+
+## 🛠 Tech Stack
+
+### 💻 Frontend
+
+* HTML, CSS, JavaScript
+* Next.js
+* Tailwind CSS
+
+### ⚙️ Backend
+
+* Node.js
+* Express.js
+* Django
+
+### 🗄 Database
+
+* MongoDB
+
+### 🧰 Tools
+
+* Git & GitHub
+* VS Code
+
+---
+
+## 📂 Projects
+
+### 🔥 YouTube Clone (Featured)
+
+* Full-stack video streaming platform
+* Authentication & video uploads
+* Real-time features
+* **Tech:** Node.js, Express, MongoDB, Next.js
+
+---
+
+### 🟢 Aarogya App (Backend)
+
+* Healthcare backend system
+* Secure API handling
+* Scalable architecture
+
+---
+
+### 🟡 Travel Planner
+
+* Smart itinerary management system
+* Built with Django
+* User-friendly interface
+
+---
+
+### 🔴 SheCurity App
+
+* Safety-focused mobile app
+* Real-time tracking & SOS feature
+* Real-world impact
+
+---
+
+## 📸 Screenshots
+
+*(Add your project images here)*
+
+---
+
+## 📬 Contact Me
+
+* 📧 Email: [yourmail@gmail.com](mailto:yourmail@gmail.com)
+* 💼 LinkedIn: https://linkedin.com/in/YOUR_USERNAME
+* 💻 GitHub: https://github.com/YOUR_USERNAME
+
+---
+
+## 📄 Resume
+
+👉 [Download Resume](./public/Sahil_Rathod_Resume.pdf)
+
+---
+
+## ⚡ Features
+
+* Modern UI (Dark Theme 🌙)
+* Responsive Design 📱
+* Smooth Animations ✨
+* Project Showcase 💼
+* Downloadable Resume 📄
+
+---
+
+## 🚀 Installation & Setup
 
 ```bash
+git clone https://github.com/YOUR_USERNAME/my-portfolio.git
+cd my-portfolio
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌍 Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Deployed using **Vercel**
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ⭐ Show Your Support
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+If you like this project:
+👉 Give it a ⭐ on GitHub
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📌 Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Sahil Rathod**
+Full Stack Developer
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
