@@ -1,22 +1,23 @@
-import React from "react";
+﻿import React from "react";
 import { Code2 } from "lucide-react";
 
 export default function FloatingSkillButton() {
   return (
-    <div className="fixed right-4 md:right-8 bottom-8 md:bottom-auto md:top-1/2 md:-translate-y-1/2 z-50 animate-bounce-slow">
+    <div className="fixed bottom-8 right-4 z-50 md:right-8 md:bottom-auto md:top-1/2 md:-translate-y-1/2">
       <a
         href="#skills"
         aria-label="Scroll to Skills"
-        className="group relative flex items-center justify-center w-12 h-12 rounded-full bg-blue-600/20 backdrop-blur-md border border-blue-500/50 shadow-[0_0_15px_rgba(59,130,246,0.3)] hover:bg-blue-600/40 hover:scale-110 hover:shadow-[0_0_25px_rgba(59,130,246,0.6)] transition-all duration-300"
+        className="animate-bounce-slow group relative flex h-12 w-12 items-center justify-center rounded-md border border-sky-400/40 bg-slate-900/80 shadow-xl backdrop-blur-md transition-all duration-300 hover:border-sky-300 hover:bg-slate-800"
       >
         {/* Tooltip (Appears on Hover) */}
-        <span className="absolute right-14 px-3 py-1.5 rounded-lg bg-slate-800/90 backdrop-blur-sm text-white text-sm font-semibold border border-white/10 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none whitespace-nowrap shadow-xl translate-x-2 group-hover:translate-x-0">
+        <span className="pointer-events-none absolute right-14 translate-x-2 whitespace-nowrap rounded-md border border-slate-700 bg-slate-900/95 px-3 py-1.5 text-sm font-semibold text-white opacity-0 shadow-xl backdrop-blur-sm transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100">
            Skills
         </span>
 
         {/* The Icon */}
-        <Code2 className="w-5 h-5 text-blue-400 group-hover:text-white transition-colors duration-300" />
+        <Code2 className="h-5 w-5 text-sky-300 transition-colors duration-300 group-hover:text-white" />
       </a>
     </div>
   );
 }
+
