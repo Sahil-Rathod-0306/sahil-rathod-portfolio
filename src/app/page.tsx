@@ -1,6 +1,5 @@
-﻿import Image from "next/image";
+﻿// Using standard img elements instead of next/image to avoid missing module/type issues
 import { Mail, ArrowRight } from "lucide-react";
-import Link from "next/link";
 import Skills from "./components/Skills/page";
 
 import About from "./components/About/page";
@@ -8,6 +7,8 @@ import FloatingSkillButton from "./components/FloatingNav/page";
 import Achievements from "@/app/components/Achievements/page";
 import Contact from "./components/contact/page";
 import Footer from "./components/Footer/page";
+import Link from "next/link";
+import Terminal from "./components/Terminal/page";
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
         <div className="z-10 grid w-full max-w-7xl grid-cols-1 items-center gap-12 lg:grid-cols-2">
           <div className="flex flex-col space-y-6 animate-fade-in-up">
             <p className="text-sm font-semibold uppercase tracking-[0.28em] text-sky-300">
-              Hello, I&apos;m
+              Hello, I'm
             </p>
 
             <h1 className="text-5xl font-extrabold tracking-tight text-white md:text-7xl">
@@ -44,12 +45,13 @@ export default function Home() {
             </p>
 
             <div className="flex flex-wrap gap-4 pt-6">
-              <Link href="/components/projects">
-                <button className="shine-button group flex items-center gap-2 rounded-md bg-sky-500 px-8 py-3.5 font-semibold text-white shadow-lg shadow-sky-950/35 transition-all duration-300 hover:-translate-y-0.5 hover:bg-sky-400">
-                  View My Projects
-                  <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-                </button>
-              </Link>
+              <a
+                href="/components/projects"
+                className="shine-button group inline-flex items-center gap-2 rounded-md bg-sky-500 px-8 py-3.5 font-semibold text-white shadow-lg shadow-sky-950/35 transition-all duration-300 hover:-translate-y-0.5 hover:bg-sky-400"
+              >
+                View My Projects
+                <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+              </a>
               <a
                 href="/SAHIL-RATHOD-Resume.pdf"
                 download
@@ -110,18 +112,17 @@ export default function Home() {
 
           <div className="relative hidden h-[600px] w-full items-center justify-center lg:flex">
             <div className="animate-hero-portrait relative z-20 flex h-full w-full items-end justify-center">
-              <Image
+              <img
                 src="/sahil_photo.png"
                 alt="Sahil Rathod"
                 width={500}
                 height={900}
                 className="w-[500px] object-contain drop-shadow-[0_28px_48px_rgba(2,6,23,0.55)] transition-all duration-500"
-                priority
               />
             </div>
 
             <div className="absolute left-4 top-20 z-30 animate-float-slow">
-              <Image
+              <img
                 src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
                 alt="React"
                 width={60}
@@ -131,7 +132,7 @@ export default function Home() {
             </div>
 
             <div className="absolute right-12 top-32 z-30 animate-float-medium">
-              <Image
+              <img
                 src="https://assets.vercel.com/image/upload/front/assets/design/nextjs-white-logo.svg"
                 alt="Next.js"
                 width={110}
@@ -141,7 +142,7 @@ export default function Home() {
             </div>
 
             <div className="absolute bottom-40 left-10 z-30 animate-float-fast">
-              <Image
+              <img
                 src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
                 alt="JavaScript"
                 width={55}
@@ -159,15 +160,19 @@ export default function Home() {
         </div>
       </section>
 
-      <Link href="/components/Achievements" className="mt-12 flex justify-center">
-        <button className="shine-button rounded-md bg-sky-500 px-6 py-3 font-semibold text-white shadow-lg shadow-sky-950/35 transition hover:bg-sky-400">
-          View All Certificates -&gt;
-        </button>
-      </Link>
-
+      <div className="mt-12 flex justify-center">
+        <Link
+          href="/components/Achievements"
+          className="shine-button rounded-md bg-sky-500 px-6 py-3 font-semibold text-white shadow-lg shadow-sky-950/35 transition hover:bg-sky-400"
+        >
+          View All Certificates
+        </Link>
+      </div>
       <About />
       <Skills />
       <Contact />
+      <Terminal />
+
       <Footer />
     </main>
   );
