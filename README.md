@@ -7,8 +7,7 @@ This project showcases my skills, projects, and experience as a **Full Stack Dev
 
 ## 🌐 Live Demo
 
-👉 https://your-portfolio.vercel.app
-*(Update after deployment)*
+👉 https://sahil-rathod-portfolio.vercel.app/
 
 ---
 
