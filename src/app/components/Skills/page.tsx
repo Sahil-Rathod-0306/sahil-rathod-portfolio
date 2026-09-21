@@ -3,7 +3,7 @@
 const skillCategories = [
   {
     title: "Frontend Development",
-    skills: ["Next.js", "React Native", "JavaScript", "HTML", "CSS", "Bootstrap"],
+    skills: ["C++","Next.js", "React Native", "JavaScript", "HTML", "CSS", "Bootstrap"],
   },
   {
     title: "Backend & Databases",
